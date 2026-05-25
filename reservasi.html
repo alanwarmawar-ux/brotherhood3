@@ -1,0 +1,430 @@
+<!DOCTYPE html>
+
+<html lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Reserve Your Table - Brotherhood Coffee &amp; Co</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com" rel="preconnect"/>
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&amp;family=Playfair+Display:wght@600;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+        tailwind.config = {
+          darkMode: "class",
+          theme: {
+            extend: {
+              "colors": {
+                      "on-secondary-container": "#7a5840",
+                      "primary-container": "#3e2723",
+                      "on-secondary-fixed": "#2d1604",
+                      "surface-container": "#f0eded",
+                      "background": "#fcf9f8",
+                      "secondary-fixed": "#ffdcc6",
+                      "outline": "#827472",
+                      "surface-container-lowest": "#ffffff",
+                      "inverse-on-surface": "#f3f0f0",
+                      "secondary-container": "#ffd1b3",
+                      "secondary": "#79573f",
+                      "tertiary-fixed": "#ffddb9",
+                      "surface-tint": "#745853",
+                      "on-tertiary-fixed": "#2b1700",
+                      "on-tertiary-container": "#b58d5f",
+                      "on-surface": "#1b1c1c",
+                      "on-surface-variant": "#504442",
+                      "surface": "#fcf9f8",
+                      "on-tertiary": "#ffffff",
+                      "primary": "#271310",
+                      "error-container": "#ffdad6",
+                      "error": "#ba1a1a",
+                      "tertiary": "#271400",
+                      "on-primary-fixed-variant": "#5b403c",
+                      "surface-container-high": "#eae7e7",
+                      "on-tertiary-fixed-variant": "#5f401a",
+                      "surface-container-highest": "#e4e2e1",
+                      "tertiary-container": "#422703",
+                      "inverse-primary": "#e3beb8",
+                      "on-primary-container": "#ae8d87",
+                      "surface-bright": "#fcf9f8",
+                      "surface-dim": "#dcd9d9",
+                      "on-secondary": "#ffffff",
+                      "tertiary-fixed-dim": "#ecbe8d",
+                      "primary-fixed": "#ffdad4",
+                      "on-primary-fixed": "#2b1613",
+                      "on-background": "#1b1c1c",
+                      "inverse-surface": "#303030",
+                      "on-error": "#ffffff",
+                      "on-error-container": "#93000a",
+                      "surface-variant": "#e4e2e1",
+                      "surface-container-low": "#f6f3f2",
+                      "secondary-fixed-dim": "#eabda0",
+                      "on-secondary-fixed-variant": "#5f402a",
+                      "on-primary": "#ffffff",
+                      "primary-fixed-dim": "#e3beb8",
+                      "outline-variant": "#d3c3c0",
+                      "card-surface": "#FFF8E1"
+              },
+              "borderRadius": {
+                      "DEFAULT": "0.25rem",
+                      "lg": "0.5rem",
+                      "xl": "0.75rem",
+                      "2xl": "1rem",
+                      "full": "9999px"
+              },
+              "spacing": {
+                      "gutter": "24px",
+                      "container-max": "1200px",
+                      "margin-mobile": "20px",
+                      "margin-desktop": "64px",
+                      "base": "8px"
+              },
+              "fontFamily": {
+                      "display-lg-mobile": [
+                              "Playfair Display"
+                      ],
+                      "body-md": [
+                              "Inter"
+                      ],
+                      "display-lg": [
+                              "Playfair Display"
+                      ],
+                      "headline-md": [
+                              "Playfair Display"
+                      ],
+                      "headline-sm": [
+                              "Playfair Display"
+                      ],
+                      "body-lg": [
+                              "Inter"
+                      ],
+                      "label-md": [
+                              "Inter"
+                      ]
+              },
+              "fontSize": {
+                      "display-lg-mobile": [
+                              "32px",
+                              {
+                                      "lineHeight": "40px",
+                                      "fontWeight": "700"
+                              }
+                      ],
+                      "body-md": [
+                              "16px",
+                              {
+                                      "lineHeight": "24px",
+                                      "fontWeight": "400"
+                              }
+                      ],
+                      "display-lg": [
+                              "48px",
+                              {
+                                      "lineHeight": "56px",
+                                      "letterSpacing": "-0.02em",
+                                      "fontWeight": "700"
+                              }
+                      ],
+                      "headline-md": [
+                              "32px",
+                              {
+                                      "lineHeight": "40px",
+                                      "fontWeight": "600"
+                              }
+                      ],
+                      "headline-sm": [
+                              "24px",
+                              {
+                                      "lineHeight": "32px",
+                                      "fontWeight": "600"
+                              }
+                      ],
+                      "body-lg": [
+                              "18px",
+                              {
+                                      "lineHeight": "28px",
+                                      "fontWeight": "400"
+                              }
+                      ],
+                      "label-md": [
+                              "14px",
+                              {
+                                      "lineHeight": "20px",
+                                      "letterSpacing": "0.05em",
+                                      "fontWeight": "600"
+                              }
+                      ]
+              }
+            }
+          }
+        }
+      </script>
+<style>
+          .bg-coffee-pattern {
+              background-image: url('data:image/svg+xml;utf8,<svg width="20" height="20" xmlns="http://www.w3.org/2000/svg"><circle cx="10" cy="10" r="1" fill="%236F4E37" fill-opacity="0.05"/></svg>');
+              background-repeat: repeat;
+          }
+          .shadow-level-1 {
+              box-shadow: 0 4px 12px rgba(62, 39, 35, 0.1);
+          }
+          .shadow-level-2 {
+              box-shadow: 0 12px 32px rgba(62, 39, 35, 0.15);
+          }
+          .input-field {
+              background-color: rgba(62, 39, 35, 0.05);
+              border: 1px solid transparent;
+              border-radius: 25px;
+              transition: all 0.2s ease-in-out;
+          }
+          .input-field:focus {
+              border-color: rgba(111, 78, 55, 1);
+              outline: none;
+              box-shadow: 0 0 0 1px rgba(111, 78, 55, 0.2);
+          }
+          .btn-primary {
+              background-color: #3E2723;
+              color: white;
+              border-radius: 25px;
+              transition: transform 0.2s, background-color 0.2s;
+          }
+          .btn-primary:hover {
+              background-color: #2b1b18;
+              transform: translateY(-1px);
+          }
+          .btn-secondary {
+              background-color: transparent;
+              border: 1px solid rgba(111, 78, 55, 0.2);
+              color: #3E2723;
+              border-radius: 25px;
+              transition: all 0.2s;
+          }
+          .btn-secondary:hover {
+              background-color: rgba(111, 78, 55, 0.05);
+          }
+          html { scroll-behavior: smooth; }
+      </style>
+</head>
+<body class="bg-background text-on-background font-body-md bg-coffee-pattern min-h-screen flex flex-col">
+        <!-- Navigation Bar -->
+<div style="background: #3E2723; padding: 15px 30px; display: flex; justify-content: space-between; align-items: center; position: sticky; top: 0; z-index: 1000;">
+  <h2 style="color: #FFF8E1; margin: 0; font-family: 'Playfair Display', serif;">Brotherhood Coffee & Co</h2>
+  <a href="menu.html" style="background: #FFF8E1; color: #3E2723; padding: 10px 24px; border-radius: 8px; text-decoration: none; font-weight: 600; font-family: 'Inter', sans-serif;">
+    Lihat Menu
+  </a>
+</div>
+<!-- TopNavBar -->
+<header class="bg-background/95 dark:bg-primary/95 backdrop-blur-md docked full-width top-0 sticky z-50 border-b border-primary/10 dark:border-primary-fixed/10 flex justify-between items-center w-full px-margin-mobile md:px-margin-desktop py-4 max-w-container-max mx-auto flat no shadows">
+<a class="font-display-lg text-headline-sm tracking-tight text-primary dark:text-primary-fixed" href="#">Brotherhood Coffee &amp; Co</a>
+<nav class="hidden md:flex gap-6 items-center">
+<a class="text-on-surface-variant dark:text-outline-variant hover:text-primary dark:hover:text-primary-fixed transition-colors font-label-md text-label-md hover:bg-secondary-container/50 dark:hover:bg-primary-container/50 p-2 rounded-lg" href="#">Our Coffee</a>
+<a class="text-on-surface-variant dark:text-outline-variant hover:text-primary dark:hover:text-primary-fixed transition-colors font-label-md text-label-md hover:bg-secondary-container/50 dark:hover:bg-primary-container/50 p-2 rounded-lg" href="#">Menu</a>
+<a class="text-primary dark:text-primary-fixed font-bold border-b-2 border-primary dark:border-primary-fixed pb-1 font-label-md text-label-md hover:bg-secondary-container/50 dark:hover:bg-primary-container/50 p-2 rounded-lg" href="#">Private Room</a>
+<a class="text-on-surface-variant dark:text-outline-variant hover:text-primary dark:hover:text-primary-fixed transition-colors font-label-md text-label-md hover:bg-secondary-container/50 dark:hover:bg-primary-container/50 p-2 rounded-lg" href="#">Contact</a>
+</nav>
+<a class="btn-primary px-6 py-2 font-label-md text-label-md hidden md:block" href="#reservation-section">Book Now</a>
+</header>
+<!-- Main Content Canvas -->
+<main class="flex-grow">
+<!-- Hero Section -->
+<section class="relative h-[80vh] min-h-[600px] flex items-center justify-center overflow-hidden">
+<!-- Background Image with Overlay -->
+<div class="absolute inset-0 z-0">
+<img alt="A warm, inviting view of Brotherhood Coffee &amp; Co at dusk. The exterior features a modern industrial design with concrete walls, warm string lights, and lush greenery. The lighting creates a cozy, indulgent atmosphere perfect for a premium coffee experience." class="w-full h-full object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAD2yGUCzgO68HSCemZTFRJ1bZQG8MfiVaCYR44ijJ3B0AkpwWqN04y8-HCtUzsa2jmu3NoGUwJ92b7HYCPTxaxzOTwtYWlKihXMjLW2EDymGSRFVogB2S0k7JgY6vVJLDiLyjFves-4HzcB2HDkRCT--hXBaRBkZYyGbtPRBCT9jDk_pF1aYMZAJMARJi6LqH-qtNUnmUEpFP5xojQDB0RiChly41hkFea8H6M52YOxUw2cjmXW0w8_wCpXG5P7y7eCQk3zj6jBP8"/>
+<div class="absolute inset-0 bg-gradient-to-b from-primary-container/80 to-primary-container/90"></div>
+</div>
+<div class="relative z-10 text-center px-margin-mobile md:px-margin-desktop max-w-container-max mx-auto text-surface">
+<h1 class="font-display-lg-mobile md:font-display-lg text-display-lg-mobile md:text-display-lg mb-4 text-secondary-fixed">Reserve Your Special Moment</h1>
+<p class="font-headline-sm text-headline-sm mb-6 text-tertiary-fixed-dim italic">at Brotherhood Coffee &amp; Co</p>
+<p class="font-body-lg text-body-lg mb-10 max-w-2xl mx-auto text-surface-container-low opacity-90">
+                    Experience premium coffee, exquisite cuisine, and warm hospitality in the heart of Pati.
+                </p>
+<a class="inline-block bg-card-surface text-primary-container font-label-md text-label-md px-8 py-4 rounded-full shadow-lg hover:shadow-xl transition-all transform hover:-translate-y-1" href="#reservation-section">
+                    Book Your Table
+                </a>
+</div>
+</section>
+<!-- Features Section -->
+<section class="py-16 px-margin-mobile md:px-margin-desktop bg-surface">
+<div class="max-w-container-max mx-auto flex flex-wrap justify-center gap-8 md:gap-16 text-center">
+<div class="flex flex-col items-center gap-3 text-on-surface-variant">
+<span class="material-symbols-outlined text-4xl text-secondary" style="font-variation-settings: 'FILL' 1;">wifi</span>
+<span class="font-label-md text-label-md">Free WiFi</span>
+</div>
+<div class="flex flex-col items-center gap-3 text-on-surface-variant">
+<span class="material-symbols-outlined text-4xl text-secondary" style="font-variation-settings: 'FILL' 1;">meeting_room</span>
+<span class="font-label-md text-label-md">Private Rooms</span>
+</div>
+<div class="flex flex-col items-center gap-3 text-on-surface-variant">
+<span class="material-symbols-outlined text-4xl text-secondary" style="font-variation-settings: 'FILL' 1;">deck</span>
+<span class="font-label-md text-label-md">Indoor &amp; Outdoor</span>
+</div>
+</div>
+</section>
+<!-- Reservation Form Section -->
+<section class="py-20 px-margin-mobile md:px-margin-desktop" id="reservation-section">
+<div class="max-w-3xl mx-auto">
+<div class="bg-card-surface rounded-2xl shadow-level-2 p-8 md:p-12 border border-primary/5">
+<h2 class="font-headline-md text-headline-md text-primary-container text-center mb-8">Make a Reservation</h2>
+<form class="space-y-6" id="reservation-form">
+<div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+<!-- Name -->
+<div>
+<label class="block font-label-md text-label-md text-on-surface-variant mb-2" for="name">Full Name</label>
+<input class="w-full input-field px-4 py-3 text-body-md" id="name" placeholder="John Doe" required="" type="text"/>
+</div>
+<!-- Phone -->
+<div>
+<label class="block font-label-md text-label-md text-on-surface-variant mb-2" for="phone">Phone Number</label>
+<div class="flex">
+<span class="inline-flex items-center px-4 rounded-l-full border border-r-0 border-transparent bg-primary-container/5 text-on-surface-variant font-body-md">+62</span>
+<input class="w-full input-field rounded-l-none px-4 py-3 text-body-md border-l-0" id="phone" placeholder="812 3456 7890" required="" type="tel"/>
+</div>
+</div>
+<!-- Date -->
+<div>
+<label class="block font-label-md text-label-md text-on-surface-variant mb-2" for="date">Date</label>
+<input class="w-full input-field px-4 py-3 text-body-md text-on-surface" id="date" min="" required="" type="date"/>
+</div>
+<!-- Time -->
+<div>
+<label class="block font-label-md text-label-md text-on-surface-variant mb-2" for="time">Time</label>
+<input class="w-full input-field px-4 py-3 text-body-md text-on-surface" id="time" max="22:00" min="10:00" required="" type="time"/>
+<p class="text-xs text-on-surface-variant mt-1 ml-2">Open 10:00 AM - 10:00 PM</p>
+</div>
+<!-- Guests -->
+<div>
+<label class="block font-label-md text-label-md text-on-surface-variant mb-2" for="guests">Number of Guests</label>
+<select class="w-full input-field px-4 py-3 text-body-md appearance-none" id="guests" required="">
+<option disabled="" selected="" value="">Select guests</option>
+<option value="1">1 Person</option>
+<option value="2">2 People</option>
+<option value="3">3 People</option>
+<option value="4">4 People</option>
+<option value="5">5 People</option>
+<option value="6">6 People</option>
+<option value="7">7 People</option>
+<option value="8">8 People</option>
+<option value="large">9+ People (Contact us)</option>
+</select>
+</div>
+<!-- Table Preference -->
+<div>
+<label class="block font-label-md text-label-md text-on-surface-variant mb-2 flex items-center gap-2">
+                                    Table Preference
+                                    <span class="group relative cursor-help">
+<span class="material-symbols-outlined text-sm text-secondary">info</span>
+<span class="hidden group-hover:block absolute bottom-full left-1/2 -translate-x-1/2 mb-2 w-48 bg-inverse-surface text-inverse-on-surface text-xs p-2 rounded shadow-lg z-10 text-center">Prihatin Room is our exclusive private area for meetings or intimate gatherings.</span>
+</span>
+</label>
+<div class="flex gap-4">
+<label class="flex-1 cursor-pointer">
+<input checked="" class="peer sr-only" name="preference" type="radio" value="regular"/>
+<div class="text-center px-4 py-3 rounded-full border border-primary/20 text-on-surface-variant peer-checked:bg-primary-container/10 peer-checked:border-secondary peer-checked:text-secondary font-label-md text-label-md transition-all">
+                                            Regular Area
+                                        </div>
+</label>
+<label class="flex-1 cursor-pointer">
+<input class="peer sr-only" name="preference" type="radio" value="private"/>
+<div class="text-center px-4 py-3 rounded-full border border-primary/20 text-on-surface-variant peer-checked:bg-primary-container/10 peer-checked:border-secondary peer-checked:text-secondary font-label-md text-label-md transition-all">
+                                            Prihatin Room
+                                        </div>
+</label>
+</div>
+</div>
+</div>
+<!-- Special Requests -->
+<div>
+<label class="block font-label-md text-label-md text-on-surface-variant mb-2" for="requests">Special Requests (Optional)</label>
+<textarea class="w-full input-field px-4 py-3 text-body-md resize-none" id="requests" placeholder="Allergies, special occasions, etc." rows="3"></textarea>
+</div>
+<div class="pt-4">
+<button class="w-full btn-primary py-4 font-label-md text-label-md text-lg shadow-md hover:shadow-lg" type="submit">Confirm Reservation</button>
+</div>
+</form>
+<!-- Success Message (Hidden by default) -->
+<div class="hidden mt-6 p-4 rounded-xl bg-[#e3beb8]/20 border border-[#e3beb8] text-center text-primary-container" id="success-message">
+<span class="material-symbols-outlined text-3xl mb-2 text-secondary" style="font-variation-settings: 'FILL' 1;">check_circle</span>
+<p class="font-headline-sm text-headline-sm mb-1">Reservation Request Sent!</p>
+<p class="font-body-md text-body-md text-on-surface-variant">We will confirm your booking via WhatsApp shortly.</p>
+</div>
+</div>
+</div>
+</section>
+<!-- Visit Information Section -->
+<section class="py-16 px-margin-mobile md:px-margin-desktop bg-surface-container-low border-t border-primary/5">
+<div class="max-w-container-max mx-auto">
+<h3 class="font-headline-md text-headline-md text-center text-primary-container mb-12">Visit Us</h3>
+<div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+<!-- Location Card -->
+<div class="bg-card-surface rounded-2xl p-6 shadow-level-1 text-center flex flex-col items-center h-full">
+<div class="w-12 h-12 rounded-full bg-secondary-container/30 flex items-center justify-center mb-4 text-secondary">
+<span class="material-symbols-outlined text-2xl" style="font-variation-settings: 'FILL' 1;">location_on</span>
+</div>
+<h4 class="font-label-md text-label-md text-primary-container mb-2">Location</h4>
+<p class="font-body-md text-body-md text-on-surface-variant mb-6 flex-grow">Jl. Penjawi No.8, Pati</p>
+<button class="btn-secondary px-6 py-2 font-label-md text-label-md w-full">Open in Maps</button>
+</div>
+<!-- Hours Card -->
+<div class="bg-card-surface rounded-2xl p-6 shadow-level-1 text-center flex flex-col items-center h-full">
+<div class="w-12 h-12 rounded-full bg-secondary-container/30 flex items-center justify-center mb-4 text-secondary">
+<span class="material-symbols-outlined text-2xl" style="font-variation-settings: 'FILL' 1;">schedule</span>
+</div>
+<h4 class="font-label-md text-label-md text-primary-container mb-2">Hours</h4>
+<p class="font-body-md text-body-md text-on-surface-variant mb-6 flex-grow">Mon - Sun<br/>10:00 AM - 11:00 PM</p>
+<div class="mt-auto pt-2 w-full border-t border-primary/10">
+<span class="text-xs text-on-surface-variant italic">Walk-ins welcome</span>
+</div>
+</div>
+<!-- Contact Card -->
+<div class="bg-card-surface rounded-2xl p-6 shadow-level-1 text-center flex flex-col items-center h-full">
+<div class="w-12 h-12 rounded-full bg-secondary-container/30 flex items-center justify-center mb-4 text-secondary">
+<span class="material-symbols-outlined text-2xl" style="font-variation-settings: 'FILL' 1;">call</span>
+</div>
+<h4 class="font-label-md text-label-md text-primary-container mb-2">Contact</h4>
+<p class="font-body-md text-body-md text-on-surface-variant mb-6 flex-grow">WA: 082137788757</p>
+<button class="btn-primary px-6 py-2 font-label-md text-label-md w-full flex items-center justify-center gap-2">
+<span class="material-symbols-outlined text-sm">chat</span> Chat on WhatsApp
+                        </button>
+</div>
+</div>
+</div>
+</section>
+</main>
+<!-- Footer -->
+<footer class="bg-primary dark:bg-on-primary-fixed text-on-primary dark:text-primary-fixed grid grid-cols-1 md:grid-cols-3 gap-gutter w-full px-margin-mobile md:px-margin-desktop py-16 max-w-container-max mx-auto full-width flat no shadows">
+<div class="flex flex-col gap-4">
+<span class="font-display-lg text-headline-sm text-surface dark:text-primary-fixed-dim">Brotherhood Coffee &amp; Co</span>
+<p class="font-body-md text-body-md text-surface-variant/80">Crafted with Heritage.</p>
+</div>
+<div class="flex flex-col gap-3 md:items-center">
+<a class="font-label-md text-label-md text-surface-variant/80 dark:text-outline-variant hover:text-tertiary-fixed-dim transition-colors focus:underline decoration-2 underline-offset-4" href="#">Instagram</a>
+<a class="font-label-md text-label-md text-surface-variant/80 dark:text-outline-variant hover:text-tertiary-fixed-dim transition-colors focus:underline decoration-2 underline-offset-4" href="#">Privacy Policy</a>
+<a class="font-label-md text-label-md text-surface-variant/80 dark:text-outline-variant hover:text-tertiary-fixed-dim transition-colors focus:underline decoration-2 underline-offset-4" href="#">Terms of Service</a>
+</div>
+<div class="flex flex-col gap-4 md:items-end justify-end mt-8 md:mt-0">
+<p class="font-body-md text-body-md text-surface-variant/50">© 2026 Brotherhood Coffee &amp; Co.</p>
+</div>
+</footer>
+<script>
+        // Set minimum date to today
+        const dateInput = document.getElementById('date');
+        const today = new Date().toISOString().split('T')[0];
+        dateInput.min = today;
+
+        // Form submission handling
+        document.getElementById('reservation-form').addEventListener('submit', function(e) {
+            e.preventDefault();
+            // Simulate form submission
+            const btn = this.querySelector('button[type="submit"]');
+            const originalText = btn.innerText;
+            btn.innerText = 'Processing...';
+            btn.disabled = true;
+            btn.classList.add('opacity-75');
+            
+            setTimeout(() => {
+                this.style.display = 'none';
+                document.getElementById('success-message').classList.remove('hidden');
+            }, 800);
+        });
+    </script>
+</body></html>
